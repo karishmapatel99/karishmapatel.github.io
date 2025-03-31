@@ -1,163 +1,109 @@
-/* Global Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif; /* Improved font */
-}
-
-/* Body */
+/* General page styling */
 body {
+    font-family: 'Arial', sans-serif;
     background-color: #f3ece4; /* Light beige */
     color: #02000d; /* Deep navy */
-    line-height: 1.6;
-    font-size: 16px;
-    padding: 0 20px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
-/* Main Container */
+/* Main container */
 .container {
     width: 80%;
-    max-width: 1000px;
+    max-width: 900px;
     margin: 40px auto;
-    padding: 30px;
+    padding: 20px;
     background: white;
+    border: 5px solid #07203f; /* Dark blue border */
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s forwards;
 }
 
 /* Header */
 header {
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     border-bottom: 3px solid #07203f;
 }
 
-header h1 {
-    font-size: 36px;
+h1 {
+    font-size: 32px;
     color: #07203f;
     margin: 0;
-    font-family: 'Merriweather', serif; /* Elegant font for the header */
 }
 
 /* Section Titles */
 h2 {
-    font-size: 28px;
+    font-size: 24px;
     text-decoration: underline;
     margin-top: 20px;
     color: #07203f;
-    font-weight: bold;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s forwards 0.3s; /* Delay for smoother transition */
 }
 
 /* Job Titles */
 h3 {
-    font-size: 22px;
+    font-size: 20px;
     color: #02000d;
     margin-top: 15px;
-    font-weight: bold;
-}
-
-/* Paragraph Styling */
-p {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 15px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s forwards 0.5s;
 }
 
 /* Bullet points */
 ul {
     list-style-type: disc;
-    margin-left: 25px;
-    font-size: 16px;
+    margin-left: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s forwards 0.7s;
 }
 
 /* Job Section Styling */
 .job {
     background: #f9f9f9;
-    padding: 20px;
+    padding: 10px;
     border-left: 5px solid #07203f;
-    margin: 20px 0;
-    border-radius: 5px;
+    margin: 15px 0;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s forwards 0.9s;
 }
 
-/* Links */
-a {
-    color: #07203f;
-    text-decoration: none;
-    transition: color 0.3s ease;
+/* Animation for smooth fade-in and slide-up */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-a:hover {
-    color: #1abc9c; /* Teal color on hover */
+/* Add smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
 }
 
-/* Container for Contact Information */
-#contact {
-    margin-top: 40px;
-    padding: 20px;
+/* Custom Scrollbar */
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
     background-color: #07203f;
-    color: white;
-    border-radius: 8px;
-    text-align: center;
+    border-radius: 10px;
 }
 
-#contact p {
-    margin: 10px 0;
-    font-size: 18px;
-}
-
-#contact a {
-    color: white;
-    font-weight: bold;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #07203f;
-    color: white;
-    margin-top: 40px;
-    border-radius: 5px;
-}
-
-/* Hover Effects on Sections */
-section:hover {
-    background-color: #fafafa;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Buttons */
-button {
-    background-color: #07203f;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 20px;
-}
-
-button:hover {
-    background-color: #1abc9c;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        width: 95%;
-    }
-
-    header h1 {
-        font-size: 28px;
-    }
-
-    h2 {
-        font-size: 22px;
-    }
-
-    p, ul, a {
-        font-size: 14px;
-    }
+body::-webkit-scrollbar-track {
+    background: #f3ece4;
 }

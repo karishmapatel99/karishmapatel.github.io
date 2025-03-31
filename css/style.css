@@ -110,13 +110,13 @@ body::-webkit-scrollbar-track {
 
 /* Hover Effects (Remove white hover and give subtle effect) */
 section:hover {
-    background-color: #e6e6e6; /* Light grey background on hover */
+    background-color: #fff2cc; /* Light grey background on hover */
     transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 /* Contact Section Styling */
 #contact {
-    background-color: #07203f; /* Dark blue */
+    background-color: #083c5d; /* Dark blue */
     color: #f3ece4; /* Light beige text for contrast */
     padding: 20px;
     border-radius: 10px;

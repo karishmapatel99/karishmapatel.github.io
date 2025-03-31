@@ -1,62 +1,163 @@
-/* General page styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f3ece4; /* Light beige */
-    color: #02000d; /* Deep navy */
+/* Global Styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* Improved font */
 }
 
-/* Main container */
+/* Body */
+body {
+    background-color: #f3ece4; /* Light beige */
+    color: #02000d; /* Deep navy */
+    line-height: 1.6;
+    font-size: 16px;
+    padding: 0 20px;
+}
+
+/* Main Container */
 .container {
     width: 80%;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 40px auto;
-    padding: 20px;
+    padding: 30px;
     background: white;
-    border: 5px solid #07203f; /* Dark blue border */
     border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Header */
 header {
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     border-bottom: 3px solid #07203f;
 }
 
-h1 {
-    font-size: 32px;
+header h1 {
+    font-size: 36px;
     color: #07203f;
     margin: 0;
+    font-family: 'Merriweather', serif; /* Elegant font for the header */
 }
 
 /* Section Titles */
 h2 {
-    font-size: 24px;
+    font-size: 28px;
     text-decoration: underline;
     margin-top: 20px;
     color: #07203f;
+    font-weight: bold;
 }
 
 /* Job Titles */
 h3 {
-    font-size: 20px;
+    font-size: 22px;
     color: #02000d;
     margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
 }
 
 /* Bullet points */
 ul {
     list-style-type: disc;
-    margin-left: 20px;
+    margin-left: 25px;
+    font-size: 16px;
 }
 
 /* Job Section Styling */
 .job {
     background: #f9f9f9;
-    padding: 10px;
+    padding: 20px;
     border-left: 5px solid #07203f;
-    margin: 15px 0;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+/* Links */
+a {
+    color: #07203f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #1abc9c; /* Teal color on hover */
+}
+
+/* Container for Contact Information */
+#contact {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #07203f;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#contact p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+#contact a {
+    color: white;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #07203f;
+    color: white;
+    margin-top: 40px;
+    border-radius: 5px;
+}
+
+/* Hover Effects on Sections */
+section:hover {
+    background-color: #fafafa;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+button {
+    background-color: #07203f;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #1abc9c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p, ul, a {
+        font-size: 14px;
+    }
 }

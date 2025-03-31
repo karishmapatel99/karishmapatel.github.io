@@ -1,8 +1,8 @@
 /* General page styling */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f3ece4; /* Light beige */
-    color: #02000d; /* Deep navy */
+    background-color: #fceee9; /* Light pinkish cream */
+    color: #667b68; /* Dark olive green for text */
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Prevent horizontal scroll */
@@ -14,10 +14,10 @@ body {
     max-width: 900px;
     margin: 40px auto;
     padding: 20px;
-    background: white;
-    border: 5px solid #07203f; /* Dark blue border */
+    background: #ffffff; /* White background for the main content */
+    border: 5px solid #a3b899; /* Sage green border */
     border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
     opacity: 0;
     transform: translateY(50px);
     animation: fadeInUp 1s forwards;
@@ -27,12 +27,13 @@ body {
 header {
     text-align: center;
     padding-bottom: 10px;
-    border-bottom: 3px solid #07203f;
+    border-bottom: 3px solid #a3b899; /* Sage green border */
+    margin-bottom: 30px;
 }
 
 h1 {
     font-size: 32px;
-    color: #07203f;
+    color: #667b68; /* Dark olive green text */
     margin: 0;
 }
 
@@ -40,18 +41,20 @@ h1 {
 h2 {
     font-size: 24px;
     text-decoration: underline;
-    margin-top: 20px;
-    color: #07203f;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #667b68; /* Dark olive green text */
     opacity: 0;
     transform: translateY(50px);
-    animation: fadeInUp 1s forwards 0.3s; /* Delay for smoother transition */
+    animation: fadeInUp 1s forwards 0.3s;
 }
 
 /* Job Titles */
 h3 {
     font-size: 20px;
-    color: #02000d;
+    color: #667b68; /* Dark olive green */
     margin-top: 15px;
+    margin-bottom: 10px;
     opacity: 0;
     transform: translateY(50px);
     animation: fadeInUp 1s forwards 0.5s;
@@ -61,6 +64,8 @@ h3 {
 ul {
     list-style-type: disc;
     margin-left: 20px;
+    margin-bottom: 20px;
+    color: #667b68; /* Dark olive green for bullet points */
     opacity: 0;
     transform: translateY(50px);
     animation: fadeInUp 1s forwards 0.7s;
@@ -68,10 +73,11 @@ ul {
 
 /* Job Section Styling */
 .job {
-    background: #f9f9f9;
-    padding: 10px;
-    border-left: 5px solid #07203f;
-    margin: 15px 0;
+    background: #f8d3c5; /* Soft peachy background */
+    padding: 15px;
+    border-left: 5px solid #a3b899; /* Sage green left border */
+    margin: 25px 0;
+    border-radius: 5px;
     opacity: 0;
     transform: translateY(50px);
     animation: fadeInUp 1s forwards 0.9s;
@@ -100,47 +106,50 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #07203f;
+    background-color: #667b68; /* Dark olive green for scrollbar thumb */
     border-radius: 10px;
 }
 
 body::-webkit-scrollbar-track {
-    background: #f3ece4;
+    background: #fceee9; /* Light pinkish cream for track */
 }
 
 /* Hover Effects (Remove white hover and give subtle effect) */
 section:hover {
-    background-color: #fff2cc; /* Light grey background on hover */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    background-color: #dde6d5; /* Soft greenish background on hover */
+    transition: background-color 0.3s ease;
 }
 
 /* Contact Section Styling */
 #contact {
-    background-color: #083c5d; /* Dark blue */
-    color: #f3ece4; /* Light beige text for contrast */
-    padding: 20px;
+    background-color: #667b68; /* Dark olive green */
+    color: #fceee9; /* Light pinkish cream for text */
+    padding: 30px;
     border-radius: 10px;
+    margin-top: 40px;
 }
 
 #contact h2 {
-    color: #f3ece4; /* Keep the section title light */
+    color: #fceee9; /* Light pinkish cream */
+    margin-bottom: 15px;
 }
 
 #contact a {
-    color: #f3ece4; /* Keep links light */
+    color: #fceee9; /* Light text color for links */
     text-decoration: none;
 }
 
 #contact a:hover {
-    text-decoration: underline; /* Underline on hover for links */
+    text-decoration: underline; /* Underline links on hover */
 }
 
 /* Footer Styling */
 footer {
-    background-color: #07203f;
-    color: #f3ece4;
+    background-color: #667b68; /* Dark olive green */
+    color: #fceee9; /* Light pinkish cream */
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
+    margin-top: 40px;
     position: relative;
     bottom: 0;
     width: 100%;

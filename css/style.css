@@ -1,53 +1,62 @@
-/* General Styles */
+/* General page styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f6ece3;
-    color: #4E3829;
+    background-color: #f3ece4; /* Light beige */
+    color: #02000d; /* Deep navy */
     margin: 0;
     padding: 0;
 }
 
+/* Main container */
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border: 5px solid #07203f; /* Dark blue border */
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
 /* Header */
 header {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
     text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #07203f;
 }
 
-/* Section */
-section {
-    padding: 2rem;
-    margin: 1rem;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+h1 {
+    font-size: 32px;
+    color: #07203f;
+    margin: 0;
 }
 
+/* Section Titles */
 h2 {
-    color: #4E3829;
+    font-size: 24px;
+    text-decoration: underline;
+    margin-top: 20px;
+    color: #07203f;
 }
 
-/* List Styles */
+/* Job Titles */
+h3 {
+    font-size: 20px;
+    color: #02000d;
+    margin-top: 15px;
+}
+
+/* Bullet points */
 ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: disc;
+    margin-left: 20px;
 }
 
-li {
-    margin: 0.5rem 0;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #333;
-    color: white;
-}
-
-/* Links */
-a {
-    color: #1a73e8;
-    text-decoration: none;
+/* Job Section Styling */
+.job {
+    background: #f9f9f9;
+    padding: 10px;
+    border-left: 5px solid #07203f;
+    margin: 15px 0;
 }
